@@ -1,0 +1,86 @@
+
+body {
+  font-family: Franklin Gothic Medium, sans-serif;
+}
+
+.container {
+  padding: 0 40px;
+  margin-left: 0px;
+  font-family: Franklin Gothic Medium;
+  text-align: center;
+}
+
+  /* Свойства ссылок */
+a {
+  display: block;
+  text-decoration:none;
+  margin-bottom: 1.2em;
+  position: relative;
+  color:#696969;
+}
+
+  /* Что делать при наведении на ссылку */
+
+a:hover:after {
+  content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 1px; /* Высота линии */
+    background-color: #F08080; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+     
+}
+
+h1 {
+  font-size: 2,5em;
+  font-family: Franklin Gothic Medium;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 1em 0;
+  font-family: Franklin Gothic Medium;
+}
+
+  /* Свойства фотографии*/
+.photo {
+  border-radius: 500px;
+  /* Радиус скругления */
+  border: 3px solid transparent;
+  /* Параметры рамки */
+  box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
+  object-fit: cover;
+}
+
+  /* Эффект наведения на картинку */
+.photo:hover {
+  border: 1,8px solid #FFB6C1;
+  filter: grayscale(50%);
+}
+button {background: #F08080; 
+   box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 1px solid #F08080;
+  border-radius: 0.6em;
+  color: #F08080;
+  cursor: pointer;
+  font-size: 0,5rem;
+  font-weight: 200;
+  line-height: 1;
+  padding: 0.5em 1.3em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  font-weight: 700;}
+  button:hover {
+  background: rgba(0,0,0,0);
+  color: #A9A9A9;
+  box-shadow: inset 0 0 0 3px #696969;
+}
