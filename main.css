@@ -1,13 +1,19 @@
 
 body {
-  font-family: Franklin Gothic Medium, sans-serif;
-}
+  font-family: Arial Black, sans-serif;
+  background-image: url("back.jpg");
+  background-size: 1500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  }
 
 .container {
-  padding: 0 40px;
-  margin-left: 0px;
-  font-family: Franklin Gothic Medium;
-  text-align: center;
+ 
+  font-family: Arial Black;
+
 }
 
   /* Свойства ссылок */
@@ -16,40 +22,49 @@ a {
   text-decoration:none;
   margin-bottom: 1.2em;
   position: relative;
-  color:#696969;
-}
-
-  /* Что делать при наведении на ссылку */
-
-a:hover:after {
-  content: "";
-    width: 100%;
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    height: 1px; /* Высота линии */
-    background-color: #F08080; /* Цвет подчеркивания при появлении линии*/
-    transition: width 0.5s;  /* Время эффекта */
-     
+  color:white;
 }
 
 h1 {
   font-size: 2,5em;
-  font-family: Franklin Gothic Medium;
+  font-family: Arial Black;
+  font-weight:bold;
+  color: white;
+  text-shadow: black 1px 1px 3px;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.4em;
   margin: 1em 0;
-  font-family: Franklin Gothic Medium;
+  font-family: Arial Black;
+  font-weight:bold;
+  color: white;
+  text-shadow: black 1px 1px 3px;
 }
+
+h3 {
+  font-size: 1.1em;
+  color: white;
+  text-shadow: black 1px 1px 3px;
+  font-weight:bold;
+
+}
+
+h4 {
+  font-size: 1.3em;
+  margin: 1em 0;
+  font-family: Arial Black;
+  font-weight:bold;
+  color: white;
+  text-shadow: black 1px 1px 3px;
+}
+
 
   /* Свойства фотографии*/
 .photo {
   border-radius: 500px;
   /* Радиус скругления */
-  border: 3px solid transparent;
+  border: 2px solid white;
   /* Параметры рамки */
   box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
   object-fit: cover;
@@ -60,27 +75,42 @@ h2 {
   border: 1,8px solid #FFB6C1;
   filter: grayscale(50%);
 }
-button {background: #F08080; 
-   box-sizing: border-box;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-color: transparent;
-  border: 1px solid #F08080;
-  border-radius: 0.6em;
-  color: #F08080;
-  cursor: pointer;
-  font-size: 0,5rem;
-  font-weight: 200;
-  line-height: 1;
-  padding: 0.5em 1.3em;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Franklin Gothic Medium', sans-serif;
-  font-weight: 700;}
-  button:hover {
-  background: rgba(0,0,0,0);
-  color: #A9A9A9;
-  box-shadow: inset 0 0 0 3px #696969;
+
+/*Иконки*/ 
+
+.icon {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
 }
+
+.icon:hover {
+  -webkit-transform: rotate(360deg);
+   transform: rotate(360deg);
+}
+
+.icon {
+  filter: invert(100%);
+}
+
+/*контакты */
+
+.telegram {
+width: 33.3333333333%;
+  float: left;
+}
+.mail {
+width: 33.3333333333%;
+  float: left;
+}
+.github {
+  width: 33.3333333333%;
+  float: left;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+
